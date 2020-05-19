@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <ul>
+      <li><strong>Email</strong>: kjneo1996@gmail.com</li>
+      <li><strong>Phone number</strong>: 96859329</li>
+    </ul>
+    <!-- action attribute = what happen when click submit? -->
+    <!-- method attribute = post = transfer input to email client-->
+    <form action="mailto:kjneo1996@gmail.com" method="post" enctype="text/plain">
+      <label>Username:</label>
+      <!-- input can take text/submit/file/date/radio/range for its type attribute -->
+      <input type="text" name="Username" value=""><br>
+      <label>Password: </label>
+      <input type="password" name="Password" value=""><br>
+      <label>Email:</label>
+      <!-- email has free validation -->
+      <input type="email" name="Email" value=""><br>
+      <label>Your Message:</label><br>
+      <textarea name="Message" rows="10" cols="30"></textarea><br>
+      <label>Have you read the <strong><a href="https://generator.lorem-ipsum.info/terms-and-conditions">terms and conditions?</a></strong></label>
+      <input type="checkbox" name="checkbox" value=""><br>
+      <!-- when clicked submit, all input/textarea within this form with a name will get transfered ("posted")
+           to form's action -->
+      <input type="submit" name="">
+    </form>
+  </body>
+</html>
